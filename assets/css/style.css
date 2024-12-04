@@ -1,9 +1,26 @@
+header img {
+    height: 85px;
+}
+
 .hid {
     display: none;
+}
+
+.j1 .dropdown-toggle::after {
+    display: none !important;
+}
+
+section.items > .container > .d-flex {
+    justify-content: center;
 }
 
 @media (min-width: 992px) {
     .hid {
         display: block;
+    }
+
+    section.items > .container > .d-flex {
+        width: 280px;
+        justify-content: flex-start;
     }
 }
