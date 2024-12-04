@@ -1,5 +1,17 @@
-header img {
+nav img {
     height: 85px;
+}
+
+nav {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+nav a {
+    transition: all linear 0.2s;
+}
+
+nav a:hover {
+    color: #1252e7 !important;
 }
 
 .hid {
@@ -22,5 +34,9 @@ section.items > .container > .d-flex {
     section.items > .container > .d-flex {
         width: 280px;
         justify-content: flex-start;
+    }
+
+    .container {
+        max-width: 1150px;
     }
 }
