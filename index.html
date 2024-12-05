@@ -12,59 +12,63 @@
 
 <body class="bg-primary-subtle">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
-        <div class="container py-2 px-4">
+    <nav class="navbar navbar-expand-lg bg-light mb-2">
+        <div class="container">
             <a href="#"
                 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="images/elektrotechnika_logo3.png" alt="logo">
+                <img src="images/elektrotechnika_logo3.png" class="ps-4" alt="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto d-flex gap-2">
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle nav-link d-flex align-items-center gap-2 text-black" href="#"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-person-circle" viewBox="0 0 16 16">
-                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
-                                    <path fill-rule="evenodd"
-                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
-                                </svg>
-                                <p class="hid m-0">Přihlásit se</p>
-                            </a>
+            <form class="me-3 d-flex" role="search">
+                <input type="search" class="form-control d-none d-lg-block" placeholder="Hledat" aria-label="Search">
+                <div class="dropdown j1">
+                    <a class="btn border-0 dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg></a>
+                      <ul class="dropdown-menu dropdown-menu-end d-lg-none">
+                        <li><input type="search" class="form-control dropdown-item" placeholder="Hledat" aria-label="Search"></li>
+                    </ul>
+                </div>
+              </form>
 
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#">Přihlásit se</a></li>
-                                <li><a class="dropdown-item" href="#">Objednávky</a></li>
-                                <li><a class="dropdown-item" href="#">Můj účet</a></li>
-                                <li><a class="dropdown-item" href="#">Napiště nám</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a href="#" class="nav-link text-black">Pricing</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-black">FAQs</a></li>
-                    <li class="nav-item j1">
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle nav-link text-black" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#">item 1</a></li>
-                                <li><a class="dropdown-item" href="#">item 2</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav nav-pills d-flex align-items-center">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle nav-link d-flex align-items-center gap-2 text-black" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                            </svg>
+                            <p class="hid m-0">Přihlásit se</p>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-black" href="#">Přihlásit se</a></li>
+                            <li><a class="dropdown-item text-black" href="#">Objednávky</a></li>
+                            <li><a class="dropdown-item text-black" href="#">Můj účet</a></li>
+                            <li><a class="dropdown-item text-black" href="#">Napiště nám</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item j1">
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle nav-link text-black" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item text-black" href="#">item 1</a></li>
+                            <li><a class="dropdown-item text-black" href="#">item 2</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -122,12 +126,12 @@
                     </div>
                     <p class="fw-semibold">Typ grafické karty</p>
                     <div class="mb-2 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Sdílená paměť</label>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck8">
+                        <label class="form-check-label" for="exampleCheck8">Sdílená paměť</label>
                     </div>
                     <div class="mb-2 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                        <label class="form-check-label" for="exampleCheck2">Nesdílená paměť</label>
+                        <input type="checkbox" class="form-check-input" id="exampleCheck9">
+                        <label class="form-check-label" for="exampleCheck9">Nesdílená paměť</label>
                     </div>
                 </form>
             </div>
@@ -147,8 +151,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Acer Aspire 3 Pure
                                     Silver</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -189,8 +193,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Microsoft Surface
                                     Laptop 5 Platinum</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -232,8 +236,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">MacBook Pro 14" M3
                                     PRO International 2023</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -274,8 +278,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Notebook Lenovo LOQ
                                     15IAX9</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -317,8 +321,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">HP 250 G8 Dark
                                     Ash</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -360,8 +364,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Acer Chromebook Plus
                                     514 Steel Gray</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -402,8 +406,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">HP ProBook 455
                                     G10</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
                                         <path
                                             d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
                                     </svg>
@@ -445,8 +449,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Acer Predator Helios
                                     Neo 14 Black</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -487,8 +491,8 @@
                             <img src="images/pr9.png" class="card-img-top" alt="product">
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Dell Vostro 3530</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -530,8 +534,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Notebook Lenovo Duet
                                     5 Chromebook</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -573,8 +577,8 @@
                             <img src="images/pr11.png" class="card-img-top" alt="product">
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">MacBook Air 13"</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -615,8 +619,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Acer Nitro 5
                                     Obsidian Black</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -658,8 +662,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Dell Latitude
                                     3540</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -701,8 +705,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Notebook Lenovo
                                     IdeaPad Slim 3</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
@@ -745,8 +749,8 @@
                             <div class="card-body">
                                 <a class="card-title fs-5 text-decoration-none" href="product.html">Microsoft Surface
                                     Laptop Go 3</a>
-                                <div class="text-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <div class="text-warning pb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                                         <path
                                             d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                                     </svg>
