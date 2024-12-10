@@ -6,11 +6,11 @@ nav {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
 }
 
-header a {
+nav a {
     transition: all linear 0.2s;
 }
 
-header a:hover {
+nav a:hover {
     color: #1252e7 !important;
 }
 
@@ -30,9 +30,9 @@ textarea {
     resize: none;
 }
 
-section.items .container {
-    box-shadow: 0 0 25px rgba(255, 255, 255, 1);
-    background-color: rgba(255, 255, 255, 0.5);
+section.items .container, section.product .container {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .card p, .card a {
@@ -55,17 +55,25 @@ nav form a:active {
     color: #1252e7 !important;
 }
 
+nav a:active, nav input:active {
+    background-color: transparent !important;
+}
+
 @media (min-width: 992px) {
     .hid {
         display: block;
     }
 
-    section.items > .container > .d-flex {
+    section.items > .container > .j2 {
         width: 250px;
         justify-content: flex-start;
     }
 
     .container {
         max-width: 1250px;
+    }
+
+    section.items > form {
+        gap: 10rem !important;
     }
 }
