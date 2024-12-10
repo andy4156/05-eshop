@@ -3,14 +3,17 @@ nav img {
 }
 
 nav {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-nav a {
+nav a,
+.j4,
+.card a {
     transition: all linear 0.2s;
 }
 
-nav a:hover {
+nav a:hover,
+.j4:hover {
     color: #1252e7 !important;
 }
 
@@ -22,7 +25,7 @@ nav a:hover {
     display: none !important;
 }
 
-section.items > .container > .d-flex {
+section.items>.container>.d-flex {
     justify-content: center;
 }
 
@@ -30,17 +33,16 @@ textarea {
     resize: none;
 }
 
-section.items .container, section.product .container {
+section.items .container,
+section.product .container,
+section.param .container {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.25);
 }
 
-.card p, .card a {
-    font-size: 14px;
-}
-
+.card p,
 .card a {
-    transition: all linear 0.2s;
+    font-size: 14px;
 }
 
 .card a:hover {
@@ -55,8 +57,30 @@ nav form a:active {
     color: #1252e7 !important;
 }
 
-nav a:active, nav input:active {
+nav a:active,
+nav input:active {
     background-color: transparent !important;
+}
+
+section.product .i1 {
+    width: 400px;
+}
+
+.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    width: 500px;
+    padding: 0 4px;
+}
+
+.scrollmenu a {
+    display: inline-block;
+    padding: 6px 2px;
+}
+
+.scrollmenu img {
+    width: 75px;
+    border-radius: 0.5rem;
 }
 
 @media (min-width: 992px) {
@@ -64,16 +88,20 @@ nav a:active, nav input:active {
         display: block;
     }
 
-    section.items > .container > .j2 {
+    section.items>.container>.j2 {
         width: 250px;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .container {
         max-width: 1250px;
     }
 
-    section.items > form {
-        gap: 10rem !important;
+    .j3 {
+        gap: 0 !important;
+    }
+
+    section.product .i1 {
+        width: 600px;
     }
 }
