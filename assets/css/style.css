@@ -1,3 +1,7 @@
+body {
+    background-image: linear-gradient(#CBDDFA, #9ABEF7);
+}
+
 nav img {
     height: 85px;
 }
@@ -12,9 +16,12 @@ nav a,
     transition: all linear 0.2s;
 }
 
-nav a:hover,
-.j4:hover {
+nav a:hover {
     color: #1252e7 !important;
+}
+
+.j4:hover {
+    text-decoration: underline !important;
 }
 
 .hid {
@@ -25,7 +32,7 @@ nav a:hover,
     display: none !important;
 }
 
-section.items>.container>.d-flex {
+.items>.container>.d-flex {
     justify-content: center;
 }
 
@@ -33,7 +40,7 @@ textarea {
     resize: none;
 }
 
-section.items .container,
+.items .container,
 section.product .container,
 section.param .container {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
@@ -83,12 +90,28 @@ section.product .i1 {
     border-radius: 0.5rem;
 }
 
+.r1 {
+    width: 45%;
+}
+
+td {
+    padding: 0.25rem 0 !important;
+}
+
+section.param p {
+    font-weight: 600;
+}
+
+.r2 {
+    font-size: 12px;
+}
+
 @media (min-width: 992px) {
     .hid {
         display: block;
     }
 
-    section.items>.container>.j2 {
+    .items>.container>.j2 {
         width: 250px;
         justify-content: center;
     }
