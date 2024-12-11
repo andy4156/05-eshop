@@ -3,7 +3,7 @@ body {
 }
 
 nav img {
-    height: 85px;
+    height: 75px;
 }
 
 nav {
@@ -40,11 +40,13 @@ textarea {
     resize: none;
 }
 
-.items .container,
-section.product .container,
-section.param .container {
+.items .container {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.25);
+}
+
+.container.bg-light.rounded-2.my-5 {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
 }
 
 .card p,
@@ -87,7 +89,6 @@ section.product .i1 {
 
 .scrollmenu img {
     width: 75px;
-    border-radius: 0.5rem;
 }
 
 .r1 {
@@ -96,14 +97,32 @@ section.product .i1 {
 
 td {
     padding: 0.25rem 0 !important;
+    font-size: 14px;
 }
 
-section.param p {
+.param p {
     font-weight: 600;
+    font-size: 18px;
 }
 
-.r2 {
-    font-size: 12px;
+.r2, .r3 {
+    font-size: 12px !important;
+}
+
+.j5 {
+    font-size: 18px !important;
+    margin: 0;
+    font-weight: 600;
+    color: #000 !important;
+}
+
+section.recen .border p {
+    font-size: 14px;
+}
+
+.j6 {
+    width: 75%;
+    margin: auto;
 }
 
 @media (min-width: 992px) {
