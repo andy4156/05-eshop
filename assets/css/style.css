@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+a, p, h1, h2, h3, td {
+    font-family: "Ubuntu";
+}
+
 body {
     background-image: linear-gradient(#CBDDFA, #9ABEF7);
 }
@@ -16,7 +22,7 @@ nav a,
     transition: all linear 0.2s;
 }
 
-nav a:hover {
+nav a:hover:not(.r2, .r3) {
     color: #1252e7 !important;
 }
 
@@ -105,8 +111,12 @@ td {
     font-size: 18px;
 }
 
-.r2, .r3 {
+.r2 {
     font-size: 12px !important;
+}
+
+.r3 {
+    font-size: 16px !important;
 }
 
 .j5 {
@@ -123,6 +133,14 @@ section.recen .border p {
 .j6 {
     width: 75%;
     margin: auto;
+}
+
+.dropdown-menu a img {
+    height: 50px;
+}
+
+section.info img {
+    width: 500px;
 }
 
 @media (min-width: 992px) {
