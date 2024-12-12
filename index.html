@@ -18,26 +18,29 @@
                 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <img src="images/elektrotechnika_logo3.png" class="ps-4" alt="logo">
             </a>
-            <form class="me-3 d-flex" role="search">
-                <input type="search" class="form-control d-none d-lg-block" placeholder="Hledat" aria-label="Search">
-                <div class="dropdown j1">
-                    <a class="btn border-0 dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                        </svg></a>
-                    <ul class="dropdown-menu dropdown-menu-end d-lg-none">
-                        <li><input type="search" class="form-control dropdown-item" placeholder="Hledat"
-                                aria-label="Search"></li>
-                    </ul>
-                </div>
-            </form>
 
             <ul class="nav nav-pills d-flex align-items-center">
                 <li class="nav-item">
+                    <form class="me-3 d-flex" role="search">
+                        <input type="search" class="form-control d-none d-lg-block" placeholder="Hledat"
+                            aria-label="Search">
+                        <div class="dropdown j1">
+                            <a class="btn border-0 dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg></a>
+                            <ul class="dropdown-menu dropdown-menu-end d-lg-none">
+                                <li><input type="search" class="form-control dropdown-item" placeholder="Hledat"
+                                        aria-label="Search"></li>
+                            </ul>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-item">
                     <div class="dropdown">
-                        <a class="btn dropdown-toggle nav-link d-flex align-items-center gap-2 text-black"
+                        <a class="btn dropdown-toggle nav-link d-flex align-items-center gap-2 text-black" href="#"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -67,11 +70,20 @@
                             </svg>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item text-black r2 d-flex align-items-center" href="#"><img src="images/pr1.png" alt="kos">
-                                Acer Aspire 3 Pure Silver<p class="text-danger m-0 ms-auto ps-4 r3">16 790,-</p></a></li>
-                            <li><a class="dropdown-item text-black r2 d-flex align-items-center" href="#"><img src="images/pr9.png" alt="kos">
+                            <li><a class="dropdown-item text-black r2 d-flex align-items-center" href="#"><img
+                                        src="images/pr1.png" alt="kos">
+                                    Acer Aspire 3 Pure Silver<p class="text-danger m-0 ms-auto ps-4 r3">16 790,-</p></a>
+                            </li>
+                            <li><a class="dropdown-item text-black r2 d-flex align-items-center" href="#"><img
+                                        src="images/pr9.png" alt="kos">
                                     Dell Vostro 3530<p class="text-danger m-0 ms-auto r3">18 990,-</p></a></li>
-                            <li><div class="dropdown-item d-flex justify-content-between align-items-center border-top border-dark-subtle pt-3"><p class="m-0">Celkem</p><p class="text-danger m-0 fs-5">35 780,-</p></div></li>
+                            <li>
+                                <div
+                                    class="dropdown-item d-flex justify-content-between align-items-center border-top border-dark-subtle pt-3">
+                                    <p class="m-0">Celkem</p>
+                                    <p class="text-danger m-0 fs-5">35 780,-</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -147,7 +159,7 @@
                 </form>
             </div>
             <div>
-                <div class="pb-3 w-25">
+                <div class="pb-3 r4">
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Doporučujeme</option>
                         <option value="1">Nejprodávanější</option>
@@ -158,10 +170,13 @@
                 <div class="row row-gap-1">
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr1.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr1.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
-                                    <a class="card-title fs-5 text-decoration-none" href="product.html">Acer Aspire 3 Pure Silver</a>
+                                    <a class="card-title fs-5 text-decoration-none" href="product.html">Acer Aspire 3
+                                        Pure Silver</a>
                                     <div class="text-warning pb-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -204,7 +219,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr2.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr2.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">Microsoft
@@ -251,7 +268,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr3.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr3.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">MacBook Pro 14"
@@ -299,7 +318,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr4.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr4.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">Notebook
@@ -348,7 +369,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr5.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr5.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">HP 250
@@ -398,7 +421,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr6.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr6.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">Acer
@@ -446,7 +471,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr7.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr7.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">HP ProBook
@@ -495,7 +522,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr8.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr8.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">Acer
@@ -545,7 +574,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr9.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr9.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">Dell
@@ -594,7 +625,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr10.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr10.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">Notebook
@@ -645,7 +678,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr11.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr11.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">MacBook Air
@@ -693,7 +728,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr12.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr12.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">Acer
@@ -745,7 +782,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr13.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr13.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">Dell
@@ -799,7 +838,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr14.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr14.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">Notebook
@@ -853,7 +894,9 @@
                     </div>
                     <div class="col-md-6 col-lg-4 d-flex align-items-stretch p-1">
                         <div class="card border-0 rounded-0">
-                            <img src="images/pr15.png" class="card-img-top" alt="product">
+                            <a href="product.html">
+                                <img src="images/pr15.png" class="card-img-top" alt="product">
+                            </a>
                             <div class="card-body d-flex flex-column justify-content-between gap-4">
                                 <div>
                                     <a class="card-title fs-5 text-decoration-none" href="product.html">Microsoft
