@@ -77,6 +77,11 @@ nav input:active {
     background-color: transparent !important;
 }
 
+nav button {
+    padding: 0.01rem 0.4rem 0.15rem 0.4rem !important;
+    margin-right: 1rem;
+}
+
 section.product .i1 {
     width: 400px;
 }
@@ -84,7 +89,7 @@ section.product .i1 {
 .scrollmenu {
     overflow: auto;
     white-space: nowrap;
-    width: 500px;
+    width: 350px;
     padding: 0 4px;
 }
 
@@ -126,13 +131,8 @@ td {
     color: #000 !important;
 }
 
-section.recen .border p {
+section.recen .border p, .j6 {
     font-size: 14px;
-}
-
-.j6 {
-    width: 75%;
-    margin: auto;
 }
 
 .dropdown-menu a img {
@@ -147,8 +147,13 @@ section.info img {
     width: 175px;
 }
 
+hr {
+    width: 90%;
+    margin: auto;
+}
+
 @media (min-width: 768px) {
-    section.info img {
+    section.info img, .scrollmenu {
         width: 500px;
     }
 }
@@ -165,10 +170,6 @@ section.info img {
 
     .container {
         max-width: 1250px;
-    }
-
-    .j3 {
-        gap: 0 !important;
     }
 
     section.product .i1 {

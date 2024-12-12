@@ -14,15 +14,14 @@
 
     <nav class="navbar navbar-expand-lg bg-light mb-2">
         <div class="container">
-            <a href="index.html"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <a href="index.html" class="d-flex align-items-center me-md-auto link-body-emphasis text-decoration-none">
                 <img src="images/elektrotechnika_logo3.png" class="ps-4" alt="logo">
             </a>
 
             <ul class="nav nav-pills d-flex align-items-center">
                 <li class="nav-item">
                     <form class="me-3 d-flex" role="search">
-                        <input type="search" class="form-control d-none d-lg-block" placeholder="Hledat"
+                        <input type="search" class="form-control d-none d-lg-block border-secondary" placeholder="Hledat"
                             aria-label="Search">
                         <div class="dropdown j1">
                             <a class="btn border-0 dropdown-toggle" role="button" data-bs-toggle="dropdown"
@@ -70,13 +69,29 @@
                             </svg>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item text-black r2 d-flex align-items-center" href="#"><img
+                            <li class="d-flex align-items-center"><a
+                                    class="dropdown-item text-black r2 d-flex align-items-center" href="#"><img
                                         src="images/pr1.png" alt="kos">
-                                    Acer Aspire 3 Pure Silver<p class="text-danger m-0 ms-auto ps-4 r3">16 790,-</p></a>
+                                    Acer Aspire 3 Pure Silver<p class="text-danger m-0 ms-auto ps-4 r3">16 790,-</p>
+                                </a><button type="button" class="btn btn-danger">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                    </svg>
+                                </button>
                             </li>
-                            <li><a class="dropdown-item text-black r2 d-flex align-items-center" href="#"><img
-                                        src="images/pr9.png" alt="kos">
-                                    Dell Vostro 3530<p class="text-danger m-0 ms-auto r3">18 990,-</p></a></li>
+                            <li class="d-flex align-items-center"><a
+                                    class="dropdown-item text-black r2 d-flex align-items-center" href="#"><img
+                                        src="images/pr9.png" alt="kos"> Dell Vostro 3530<p
+                                        class="text-danger m-0 ms-auto r3">18 990,-</p></a><button type="button"
+                                    class="btn btn-danger">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                    </svg>
+                                </button></li>
                             <li>
                                 <div
                                     class="dropdown-item d-flex justify-content-between align-items-center border-top border-dark-subtle pt-3">
@@ -84,6 +99,9 @@
                                     <p class="text-danger m-0 fs-5">35 780,-</p>
                                 </div>
                             </li>
+                            <li><a href="#" class="text-decoration-none text-black d-flex justify-content-end align-items-center gap-2 mt-2 me-3 j6">Zobrazit košík<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                              </svg></a></li>
                         </ul>
                     </div>
                 </li>
@@ -94,73 +112,86 @@
     <div class="items my-5">
         <div class="container d-flex flex-column flex-lg-row gap-3 px-3 py-3">
             <div class="d-flex flex-shrink-0 p-3 bg-body-tertiary border rounded-2 j2">
-                <form class="d-flex flex-lg-column gap-5 j3 pt-2">
+                <form>
                     <div>
-                        <p class="fw-semibold">Dostupnost</p>
+                        <p class="fw-semibold m-0 mb-2 mt-3">Dostupnost</p>
                         <div class="mb-2 form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                             <label class="form-check-label" for="flexRadioDefault1">
                                 Ihned k odeslání
                             </label>
                         </div>
                         <div class="mb-2 form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Na prodejně
                             </label>
                         </div>
-                        <p class="fw-semibold">Stav zboží</p>
+                        <p class="fw-semibold m-0 mb-2 mt-3">Cena</p>
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="mb-2">
+                                <textarea class="form-control border-secondary" id="exampleFormControlTextarea3" rows="1"
+                                    placeholder="Od"></textarea>
+                            </div>
+                            <p>_</p>
+                            <div class="mb-2">
+                                <textarea class="form-control border-secondary" id="exampleFormControlTextarea2" rows="1"
+                                    placeholder="Do"></textarea>
+                            </div>
+                        </div>
+                        <p class="fw-semibold m-0 mb-2 mt-3">Stav zboží</p>
                         <div class="mb-2 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck6">
+                            <input type="checkbox" class="form-check-input border-secondary" id="exampleCheck6">
                             <label class="form-check-label" for="exampleCheck6">Nové</label>
                         </div>
                         <div class="mb-2 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck7">
+                            <input type="checkbox" class="form-check-input border-secondary" id="exampleCheck7">
                             <label class="form-check-label" for="exampleCheck7">Rozbaleno</label>
                         </div>
-                        <p class="fw-semibold">Typ notebooku</p>
+                        <p class="fw-semibold m-0 mb-2 mt-3">Typ notebooku</p>
                         <div class="mb-2 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <input type="checkbox" class="form-check-input border-secondary" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Herní</label>
                         </div>
                         <div class="mb-2 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                            <input type="checkbox" class="form-check-input border-secondary" id="exampleCheck2">
                             <label class="form-check-label" for="exampleCheck2">Běžné užití</label>
                         </div>
                     </div>
                     <div>
-                        <p class="fw-semibold">Značka</p>
+                        <p class="fw-semibold m-0 mb-2 mt-3">Značka</p>
                         <div class="mb-2">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"
+                            <textarea class="form-control border-secondary" id="exampleFormControlTextarea1" rows="1"
                                 placeholder="Hledat"></textarea>
                         </div>
                         <div class="mb-2 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                            <input type="checkbox" class="form-check-input border-secondary" id="exampleCheck3">
                             <label class="form-check-label" for="exampleCheck3">Lenovo</label>
                         </div>
                         <div class="mb-2 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                            <input type="checkbox" class="form-check-input border-secondary" id="exampleCheck4">
                             <label class="form-check-label" for="exampleCheck4">Acer</label>
                         </div>
                         <div class="mb-2 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                            <input type="checkbox" class="form-check-input border-secondary" id="exampleCheck5">
                             <label class="form-check-label" for="exampleCheck5">Microsoft</label>
                         </div>
-                        <p class="fw-semibold">Typ grafické karty</p>
+                        <p class="fw-semibold m-0 mb-2 mt-3">Typ grafické karty</p>
                         <div class="mb-2 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck8">
+                            <input type="checkbox" class="form-check-input border-secondary" id="exampleCheck8">
                             <label class="form-check-label" for="exampleCheck8">Sdílená paměť</label>
                         </div>
                         <div class="mb-2 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck9">
+                            <input type="checkbox" class="form-check-input border-secondary" id="exampleCheck9">
                             <label class="form-check-label" for="exampleCheck9">Nesdílená paměť</label>
                         </div>
                     </div>
                 </form>
             </div>
             <div>
-                <div class="pb-3 r4">
-                    <select class="form-select" aria-label="Default select example">
+                <div class="d-flex justify-content-end align-items-center gap-3 pb-3">
+                    <p class="m-0">Řadit podle:</p>
+                    <select class="form-select r4" aria-label="Default select example">
                         <option selected>Doporučujeme</option>
                         <option value="1">Nejprodávanější</option>
                         <option value="2">Nejlevnější</option>
