@@ -18,16 +18,13 @@ nav {
 
 nav a,
 .j4,
-.card a {
+.card a
+.r5 a {
     transition: all linear 0.2s;
 }
 
 nav a:hover:not(.r2, .r3) {
     color: #1252e7 !important;
-}
-
-.j4:hover {
-    text-decoration: underline !important;
 }
 
 .hid {
@@ -58,10 +55,6 @@ textarea {
 .card p,
 .card a {
     font-size: 14px;
-}
-
-.card a:hover {
-    text-decoration: underline !important;
 }
 
 .card .m-0 {
@@ -135,8 +128,12 @@ section.recen .border p, .j6 {
     font-size: 14px;
 }
 
-.dropdown-menu a img {
+.dropdown-menu a img{
     height: 50px;
+}
+
+.r5 img {
+    height: 75px;
 }
 
 section.info img {
@@ -150,6 +147,14 @@ section.info img {
 hr {
     width: 90%;
     margin: auto;
+}
+
+.j4:hover, .card a:hover, .r5 a:hover {
+    text-decoration: underline !important;
+}
+
+.r6 {
+    font-size: 18px;
 }
 
 @media (min-width: 768px) {
