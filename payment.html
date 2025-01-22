@@ -115,14 +115,14 @@
 
     <div class="container bg-light rounded-2 my-5 px-4 pb-4">
         <div class="d-flex justify-content-between w-75 m-auto py-5">
-            <a class="text-decoration-none text-secondary d-flex align-items-center gap-2">
+            <p class="text-decoration-none text-secondary d-flex align-items-center gap-2 m-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                     class="bi bi-1-circle-fill" viewBox="0 0 16 16">
                     <path
                         d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312z" />
                 </svg>
-                Košík
-            </a>
+                <a class="d-none d-lg-block text-decoration-none text-secondary">Košík</a>
+            </p>
             <a class="text-decoration-none text-primary d-flex align-items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                     class="bi bi-2-circle-fill" viewBox="0 0 16 16">
@@ -131,92 +131,92 @@
                 </svg>
                 Doprava a platba
             </a>
-            <a class="text-decoration-none text-secondary d-flex align-items-center gap-2">
+            <p class="text-decoration-none text-secondary d-flex align-items-center gap-2 m-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                     class="bi bi-3-circle" viewBox="0 0 16 16">
                     <path
                         d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318" />
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
                 </svg>
-                Dodací údaje
-            </a>
-            <a class="text-decoration-none text-secondary d-flex align-items-center gap-2">
+                <a class="d-none d-lg-block text-decoration-none text-secondary">Dodací údaje</a>
+            </p>
+            <p class="text-decoration-none text-secondary d-flex align-items-center gap-2 m-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                     class="bi bi-4-circle" viewBox="0 0 16 16">
                     <path
                         d="M7.519 5.057q.33-.527.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218" />
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
                 </svg>
-                Shrnutí objednávky
-            </a>
+                <a class="d-none d-lg-block text-decoration-none text-secondary">Shrnutí objednávky</a>
+            </p>
         </div>
-        <div class="d-flex flex-column flex-lg-row row-gap-5 px-5 justify-content-between">
-            <div style="width: 500px;">
+        <div class="row row-gap-3 px-5 pb-2">
+            <div class="col-lg-6">
                 <p class="fs-4">Zvolte způsob doručení</p>
                 <form>
                     <div class="form-check py-2">
                         <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                         <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault1">
-                            Default radio
+                            <a>PPL</a><a>Od 75 Kč</a>
                         </label>
                     </div>
                     <div class="form-check py-2">
                         <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault2">
-                            Default radio
+                            <a>Balíkovna</a><a>Od 45 Kč</a>
                         </label>
                     </div>
                     <div class="form-check py-2">
                         <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
                         <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault3">
-                            Default radio
+                            <a>Zásilkovna</a><a>Od 65 Kč</a>
                         </label>
                     </div>
                     <div class="form-check py-2">
                         <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
                         <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault4">
-                            <a>Doručení na adresu</a><a>Od 95 Kč</a>
+                            <a>Česká pošta</a><a>Od 95 Kč</a>
                         </label>
                     </div>
                 </form>
             </div>
-            <div style="width: 500px;">
+            <div class="col-lg-6">
                 <p class="fs-4">Zvolte způsob platby</p>
                 <form>
                     <div class="form-check py-2">
                         <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
                         <label class="form-check-label d-flex gap-2 align-items-center" for="flexRadioDefault5">
                             <img src="images/online.png" alt="card" style="width: auto; height: 100%;">
-                            <div class=" d-flex justify-content-between flex-grow-1">
+                            <span class=" d-flex justify-content-between flex-grow-1">
                                 <a>Kartou online</a><a>Zdarma</a>
-                            </div>
+                            </span>
                         </label>
                     </div>
                     <div class="form-check py-2">
                         <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
                         <label class="form-check-label d-flex gap-2 align-items-center" for="flexRadioDefault6">
                             <img src="images/googlepay.png" alt="card" style="width: auto; height: 100%;">
-                            <div class=" d-flex justify-content-between flex-grow-1">
+                            <span class="d-flex justify-content-between flex-grow-1">
                                 <a>Google pay</a><a>Zdarma</a>
-                            </div>
+                            </span>
                         </label>
                     </div>
                     <div class="form-check py-2">
                         <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
                         <label class="form-check-label d-flex gap-2 align-items-center" for="flexRadioDefault7">
                             <img src="images/dobirka.png" alt="card" style="width: auto; height: 100%;">
-                            <div class=" d-flex justify-content-between flex-grow-1">
+                            <span class="d-flex justify-content-between flex-grow-1">
                                 <a>Platba dobírkou při doručení</a><a>45 Kč</a>
-                            </div>
+                            </span>
                         </label>
                     </div>
                     <div class="form-check py-2">
                         <input class="form-check-input border-secondary" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
                         <label class="form-check-label d-flex gap-2 align-items-center" for="flexRadioDefault8">
                             <img src="images/qr.png" alt="card" style="width: auto; height: 100%;">
-                            <div class=" d-flex justify-content-between flex-grow-1">
+                            <span class="d-flex justify-content-between flex-grow-1">
                                 <a>QR platba - bankovní převod</a> <a>Zdarma</a>
-                            </div>
+                            </span>
                         </label>
                     </div>
                 </form>
